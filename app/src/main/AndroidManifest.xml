@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.gms.cast.samples.democastplayer">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" >
+       <!-- <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />-->
+        <meta-data
+            android:name="com.google.android.gms.version" />
+
+        <activity
+            android:name="com.shail.google.cast.CastModeSelectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.shail.google.cast.SDKCastActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.shail.google.cast.CastQueueLoadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.shail.google.cast.CastQueueUpdateItemsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.shail.google.cast.CastQueueRemoveItemsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.shail.google.cast.CastQueueInsertItemsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.shail.google.cast.CastQueueInsertAndPlayItemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.shail.google.cast.CastQueueJumpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name="com.shail.google.cast.EditItemsQueueActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.shail.google.cast.MediaRouterCastActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.shail.google.cast.CastSettingsActivity">
+        </activity>
+
+    </application>
+</manifest>

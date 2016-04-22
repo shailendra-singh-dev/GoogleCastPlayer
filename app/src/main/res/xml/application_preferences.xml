@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="@string/media_list_url"
+        android:dialogTitle="@string/dialog_title_media_list_url_pref"
+        android:inputType="textUri"
+        android:key="media_list_url_pref"
+        android:persistent="true"
+        android:summary="@string/summary_media_list_url_pref"
+        android:title="@string/media_list_url_pref" />
+    <com.shail.google.cast.CastReceiverAppsListPreference
+        android:dialogTitle="@string/dialog_title_receiver_application_id_pref"
+        android:key="receiver_application_id_pref"
+        android:persistent="true"
+        android:summary="@string/summary_receiver_application_id_pref"
+        android:title="@string/receiver_application_id_pref" />
+    <EditTextPreference
+        android:defaultValue="@string/additional_receiver_apps"
+        android:dialogTitle="@string/dialog_title_additional_receiver_apps_pref"
+        android:inputType="text"
+        android:key="additional_receiver_apps_pref"
+        android:persistent="true"
+        android:summary="@string/summary_additional_receiver_apps_pref"
+        android:title="@string/additional_receiver_apps_pref" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="relaunch_app_pref"
+        android:persistent="true"
+        android:summary="@string/summary_relaunch_app_pref"
+        android:title="@string/relaunch_app_pref" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="stop_app_pref"
+        android:persistent="true"
+        android:summary="@string/summary_stop_app_pref"
+        android:title="@string/stop_app_pref" />
+
+</PreferenceScreen>
